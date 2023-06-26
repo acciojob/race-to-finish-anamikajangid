@@ -3,7 +3,7 @@ window.promises = [];
 // Do not change the code above this
 // add your promises to the array `promises`
  
-  let a= new promise(resolve => {
+  let a = new promise(resolve => {
 	  setTimeout(() = {
 		  resolved("a")
 	  },3000)
