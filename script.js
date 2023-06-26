@@ -1,8 +1,9 @@
- window.promises = [];
+ 
 
 // Do not change the code above this
 // add your promises to the array `promises`
- 
+
+
 let a = new promise(resolve => {
 	  setTimeout(() => {
 		  resolve("a")
@@ -28,11 +29,15 @@ let e= new Promise(resolve => {
 		  resolve("e")
 	  },5000)
   })
+window.promises = [a,b,c,d,e];
+Promise.any(promises).then(result => { const  element = document.getElementById("output")
+	element.innerText = result; });
 
-let x = promise.any([a, b, c, d, e])
-x.then((data) => {
-	const  element = document.getElementById("output")
-	element.innerText = data;
+
+// let x = promise.any([a, b, c, d, e])
+// x.then((data) => {
+// 	const  element = document.getElementById("output")
+// 	element.innerText = data;
 
 
 
